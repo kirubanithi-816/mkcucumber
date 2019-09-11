@@ -1,0 +1,35 @@
+package org.cucmber.cucumber;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class AddCust {
+
+	@Given("telecom home page")
+	public void telecom_home_page() {
+	}
+	
+
+	@Given("click customber button")
+	public void click_customber_button() {
+	
+	}
+
+	@When("enter all the fields")
+	public void enter_all_the_fields() {
+	
+	}
+
+	@When("click submit")
+	public void click_submit() {
+	
+	}
+
+	@Then("display customer id")
+	public void display_customer_id() {
+	
+	}
+
+	
+}

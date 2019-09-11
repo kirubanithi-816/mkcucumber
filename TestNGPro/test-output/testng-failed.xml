@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browserName" value="Chrome"/>
+  <test name="ieTest(failed)">
+    <parameter name="browserName" value="ie"/>
+    <classes>
+      <class name="org.bgi.BasicTestng">
+        <methods>
+          <include name="afterclass"/>
+          <include name="login"/>
+          <include name="beforeclass"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- org.bgi.BasicTestng -->
+    </classes>
+  </test> <!-- ieTest(failed) -->
+  <test name="chromeTest(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="org.bgi.BasicTestng">
+        <methods>
+          <include name="afterclass"/>
+          <include name="login"/>
+          <include name="beforeclass"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- org.bgi.BasicTestng -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
