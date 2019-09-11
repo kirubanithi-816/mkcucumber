@@ -1,0 +1,38 @@
+package org.cucmber.cucumber;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class AddTariff {
+
+	@Given("Open Telecom Home page")
+	public void open_Telecom_Home_page() {
+	    
+	}
+
+	@Given("Click Add Tariff button")
+	public void click_Add_Tariff_button() {
+	    
+	}
+
+	@When("Enter all the fields")
+	public void enter_all_the_fields() {
+	    
+	}
+
+	@When("Click Submit button")
+	public void click_Submit_button() {
+	    
+	}
+
+	@Then("Display Congrats Message")
+	public void display_Congrats_Message() {
+		
+		
+	}
+
+	
+	
+	
+}
