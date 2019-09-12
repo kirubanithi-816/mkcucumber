@@ -1,0 +1,44 @@
+package org.cucmber.cucmber3;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class addTariffOutlinePgm {
+	static WebDriver driver;
+
+	@Given("Open Telecom Home page")
+	public void open_Telecom_Home_page() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\KiruSugu\\eclipse-workspace\\Kiruba\\cucumber\\driver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/telecom/");
+	   
+	}
+
+	@Given("Click on Tariff button")
+	public void click_on_Tariff_button() {
+		driver.findElement(By.xpath("(//a[text()='Add Tariff Plan'])[1]")).click();
+	}
+
+	@When("Enter all the input fields {string},{string},{string},{string},{string},{string},{string}")
+	public void enter_all_the_input_fields(String string, String string2, String string3, String string4, String string5, String string6, String string7) {
+	   
+	}
+
+	@When("Click Submit button")
+	public void click_Submit_button() {
+	   
+	}
+
+	@Then("Dispaly the Congrats Message")
+	public void dispaly_the_Congrats_Message() {
+	   
+	}
+
+
+	
+}

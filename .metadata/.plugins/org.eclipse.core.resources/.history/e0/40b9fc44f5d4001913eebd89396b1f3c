@@ -1,0 +1,57 @@
+package org.cucmber.cucumber2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class AddCusDime {
+	static WebDriver driver;
+	
+	@Given("telecom home page")
+	public void telecom_home_page() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\KiruSugu\\eclipse-workspace\\Kiruba\\cucumber\\driver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/telecom/");		
+	
+	}
+
+	@Given("click customber button")
+	public void click_customber_button() {
+		driver.findElement(By.xpath("(//a[text()='Add Customer'])[1]")).click();
+		}
+
+	@When("enter all the fields")
+	public void enter_all_the_fields() {
+	    }
+	
+
+	@When("click submit")
+	public void click_submit() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("display customer id")
+	public void display_customer_id() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("enter all the fields")
+	public void enter_all_the_fields(io.cucumber.datatable.DataTable dataTable) {
+	    // Write code here that turns the phrase above into concrete actions
+	    // For automatic transformation, change DataTable to one of
+	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+	    //
+	    // For other transformations you can register a DataTableType.
+	    throw new cucumber.api.PendingException();
+	}
+
+
+}

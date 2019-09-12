@@ -1,0 +1,9 @@
+Feature: Add Tariff Outline
+  
+
+   Scenario Outline: Multiple inputs
+    Given Open Telecom Home page
+    And Click on Tariff button
+    When Enter all the input fields
+    And Click Submit button
+    Then Dispaly the Congrats Message

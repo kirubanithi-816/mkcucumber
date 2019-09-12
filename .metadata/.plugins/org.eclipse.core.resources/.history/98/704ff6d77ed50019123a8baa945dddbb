@@ -1,0 +1,51 @@
+package org.cucmber.cucmber3;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class addTariffOutlinePgm {
+	static WebDriver driver;
+
+	@Given("Open Telecom Home page")
+	public void open_Telecom_Home_page() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\KiruSugu\\eclipse-workspace\\Kiruba\\cucumber\\driver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/telecom/");
+	   
+	}
+
+	@Given("Click on Tariff button")
+	public void click_on_Tariff_button() {
+		driver.findElement(By.xpath("(//a[text()='Add Tariff Plan'])[1]")).click();
+	}
+
+	@When("Enter all the input fields {string},{string},{string},{string},{string},{string},{string}")
+	public void enter_all_the_input_fields(String rental, String localmins, String intermins, String smspack, String mincharge, String intcharge, String smscharge) {
+		  driver.findElement(By.name("rental")).sendKeys(rental);
+		  driver.findElement(By.name("local_minutes")).sendKeys(localmins);
+		  driver.findElement(By.name("inter_minutes")).sendKeys(intermins);
+		  driver.findElement(By.name("sms_pack")).sendKeys(smspack);
+		  driver.findElement(By.name("minutes_charges")).sendKeys(mincharge);
+		  driver.findElement(By.name("inter_charges")).sendKeys(intcharge);
+		  driver.findElement(By.name("sms_charges")).sendKeys(smscharge);
+		 
+	}
+
+	@When("Click Submit button")
+	public void click_Submit_button() {
+	   
+	}
+
+	@Then("Dispaly the Congrats Message")
+	public void dispaly_the_Congrats_Message() {
+	   
+	}
+
+
+	
+}

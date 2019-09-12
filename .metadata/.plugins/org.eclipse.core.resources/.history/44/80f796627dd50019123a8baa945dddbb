@@ -1,0 +1,26 @@
+Feature: Add Tariff Outline
+
+  Scenario Outline: Multiple inputs
+    Given Open Telecom Home page
+    And Click on Tariff button
+    When Enter all the input fields
+    And Click Submit button
+    Then Dispaly the Congrats Message
+
+  Scenario Outline: Multiple inputs
+    Given Open Telecom Home page
+    And Click on Tariff button
+    When Enter all the input fields "<rental>","<localmins>","<intermins>","<smspack>","<mincharge>","<intcharge>","<smscharge>"
+    And Click Submit button
+    Then Dispaly the Congrats Message
+
+    Examples: 
+      | rental | localmins | intermins | smspack | mincharge | intcharge | smscharge |
+      |   2000 |      1002 |       500 |     200 |       678 |        22 |        36 |
+      |   2001 |      1003 |       500 |     200 |       678 |        22 |        36 |
+      |   2002 |      1004 |       500 |     200 |       678 |        22 |        36 |
+      |   2003 |      1005 |       500 |     200 |       678 |        22 |        36 |
+      |   2004 |      1006 |       500 |     200 |       678 |        22 |        36 |
+      |   2005 |      1007 |       500 |     200 |       678 |        22 |        36 |
+      |   2006 |      1008 |       500 |     200 |       678 |        22 |        36 |
+      |   2007 |      1009 |       500 |     200 |       678 |        22 |        36 |

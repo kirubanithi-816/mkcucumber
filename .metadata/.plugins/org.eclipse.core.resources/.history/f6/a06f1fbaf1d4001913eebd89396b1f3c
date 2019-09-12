@@ -1,0 +1,29 @@
+Feature: AddCust
+
+  Scenario: 
+    Given telecom home page
+    And click customber button
+    When enter all the fields
+    And click submit
+    Then display customer id
+
+  Scenario: 
+    Given telecom home page
+    And click customber button
+    When enter all the fields
+      | Kiruba | nithi | kiru@gmail.com | Chennai | 9884822824 |
+    And click submit
+    Then display customer id
+
+     Scenario: 
+    Given telecom home page
+    And click customber button
+    When enter all the fields
+    |fname|Lokesh|
+    |lname|TL|
+    |email|loke@gmail.com|
+    |address|Chennai|
+    |phno|9989899898|
+    And click submit
+    Then display customer id
+    
